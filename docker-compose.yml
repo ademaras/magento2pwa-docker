@@ -1,0 +1,64 @@
+version: '3'
+services:
+    nginx:
+        container_name: nginx-server
+        image: nginx
+        ports:
+            - "80:80"
+        volumes:
+            - ./..:/var/www
+            - ./nginx/conf.d:/etc/nginx/conf.d
+            - ./nginx/log:/var/log/nginx
+        links:
+            - php
+    php:
+        container_name: php-server
+        build: ./php/
+        volumes:
+            - ./..:/var/www
+            - ./php/conf.d/docker-php-memory-limit.ini:/usr/local/etc/php/conf.d/docker-php-memory-limit.ini
+            - ./php/conf.d/www.conf:/usr/local/etc/php-fpm.d/www.conf
+            - ./../id_rsa:/root/.ssh/id_rsa
+        links:
+            - mysql
+            - redis
+            - redis-session
+    mysql:
+        container_name: mysql-server
+        image: mysql:5.7
+        command:
+            - "--default-authentication-plugin=mysql_native_password"
+        volumes:
+            - ./mysql/data:/var/lib/mysql
+        environment:
+            - MYSQL_ROOT_PASSWORD=123456
+    phpmyadmin:
+        container_name: phpmyadmin-server
+        image: phpmyadmin/phpmyadmin
+        links:
+            - mysql:db
+        ports:
+            - "9000:80"
+    redis:
+        container_name: redis-server
+        image: redis
+        ports:
+            - 6379
+        volumes:
+            - ./redis/data:/data
+            # - ./redis/redis.conf:/usr/local/etc/redis/redis.conf
+    redis-session:
+        container_name: redis-session-server
+        image: redis
+        ports:
+            - 6380
+        volumes:
+            - ./redis-session/data:/data
+            # - ./redis-session/redis.conf:/usr/local/etc/redis/redis.conf
+    hhvm:
+        container_name: hhvm-server
+        image: hhvm/hhvm
+        ports:
+            - 8999:8999
+        volumes:
+            - ./..:/var/www
