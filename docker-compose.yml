@@ -55,10 +55,3 @@ services:
         volumes:
             - ./redis-session/data:/data
             # - ./redis-session/redis.conf:/usr/local/etc/redis/redis.conf
-    hhvm:
-        container_name: hhvm-server
-        image: hhvm/hhvm
-        ports:
-            - 8999:8999
-        volumes:
-            - ./..:/var/www
