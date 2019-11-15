@@ -5,6 +5,7 @@
 # docker files
 docker/mysql/data
 docker/redis/data
+docker/redis-session/data
 docker/nginx/log/*.log
 docker/nodejs/log/*.log
 docker/certbot/log/*.log
