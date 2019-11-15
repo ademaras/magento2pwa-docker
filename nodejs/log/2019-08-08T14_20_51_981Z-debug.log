@@ -1,0 +1,115 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@6.10.0
+3 info using node@v12.7.0
+4 verbose npm-session e892b57bf78d68be
+5 silly install runPreinstallTopLevelLifecycles
+6 silly preinstall @magento/pwa-studio@3.0.0
+7 info lifecycle @magento/pwa-studio@3.0.0~preinstall: @magento/pwa-studio@3.0.0
+8 silly install loadCurrentTree
+9 silly install readLocalPackageData
+10 timing stage:loadCurrentTree Completed in 6588ms
+11 silly install loadIdealTree
+12 silly install cloneCurrentTreeToIdealTree
+13 timing stage:loadIdealTree:cloneCurrentTree Completed in 71ms
+14 silly install loadShrinkwrap
+15 http fetch GET 200 https://registry.npmjs.org/@babel%2fcode-frame 210ms
+16 silly pacote version manifest for @babel/code-frame@7.0.0 fetched in 227ms
+17 http fetch GET 200 https://registry.npmjs.org/@babel%2fcore 46ms
+18 silly pacote version manifest for @babel/core@7.3.4 fetched in 52ms
+19 http fetch GET 200 https://registry.npmjs.org/debug 36ms
+20 silly pacote version manifest for debug@4.1.1 fetched in 41ms
+21 http fetch GET 200 https://registry.npmjs.org/source-map 34ms
+22 http fetch GET 200 https://registry.npmjs.org/source-map/-/source-map-0.5.7.tgz 72ms
+23 silly pacote version manifest for source-map@0.5.7 fetched in 115ms
+24 http fetch GET 200 https://registry.npmjs.org/@babel%2fgenerator 34ms
+25 silly pacote version manifest for @babel/generator@7.4.4 fetched in 40ms
+26 http fetch GET 200 https://registry.npmjs.org/jsesc 46ms
+27 silly pacote version manifest for jsesc@2.5.2 fetched in 58ms
+28 silly pacote version manifest for source-map@0.5.7 fetched in 2ms
+29 http fetch GET 200 https://registry.npmjs.org/@babel%2fhelper-function-name 38ms
+30 silly pacote version manifest for @babel/helper-function-name@7.1.0 fetched in 45ms
+31 http fetch GET 200 https://registry.npmjs.org/@babel%2fhelper-get-function-arity 34ms
+32 silly pacote version manifest for @babel/helper-get-function-arity@7.0.0 fetched in 39ms
+33 http fetch GET 200 https://registry.npmjs.org/@babel%2fhelper-plugin-utils 30ms
+34 silly pacote version manifest for @babel/helper-plugin-utils@7.0.0 fetched in 36ms
+35 http fetch GET 200 https://registry.npmjs.org/@babel%2fhelper-split-export-declaration 33ms
+36 silly pacote version manifest for @babel/helper-split-export-declaration@7.4.4 fetched in 37ms
+37 http fetch GET 200 https://registry.npmjs.org/@babel%2fhelpers 32ms
+38 silly pacote version manifest for @babel/helpers@7.4.4 fetched in 37ms
+39 http fetch GET 200 https://registry.npmjs.org/@babel%2fhighlight 33ms
+40 silly pacote version manifest for @babel/highlight@7.0.0 fetched in 37ms
+41 http fetch GET 200 https://registry.npmjs.org/@babel%2fparser 33ms
+42 silly pacote version manifest for @babel/parser@7.4.5 fetched in 38ms
+43 http fetch GET 200 https://registry.npmjs.org/@babel%2fplugin-syntax-object-rest-spread 33ms
+44 silly pacote version manifest for @babel/plugin-syntax-object-rest-spread@7.2.0 fetched in 38ms
+45 http fetch GET 200 https://registry.npmjs.org/@babel%2fpolyfill 36ms
+46 silly pacote version manifest for @babel/polyfill@7.4.4 fetched in 41ms
+47 warn deprecated @babel/polyfill@7.4.4: 🚨 As of Babel 7.4.0, this
+47 warn deprecated package has been deprecated in favor of directly
+47 warn deprecated including core-js/stable (to polyfill ECMAScript
+47 warn deprecated features) and regenerator-runtime/runtime
+47 warn deprecated (needed to use transpiled generator functions):
+47 warn deprecated
+47 warn deprecated   > import "core-js/stable";
+47 warn deprecated   > import "regenerator-runtime/runtime";
+48 http fetch GET 200 https://registry.npmjs.org/regenerator-runtime 34ms
+49 silly pacote version manifest for regenerator-runtime@0.13.2 fetched in 38ms
+50 http fetch GET 200 https://registry.npmjs.org/@babel%2fruntime 40ms
+51 silly pacote version manifest for @babel/runtime@7.4.5 fetched in 45ms
+52 silly pacote version manifest for regenerator-runtime@0.13.2 fetched in 1ms
+53 http fetch GET 200 https://registry.npmjs.org/@babel%2ftemplate 36ms
+54 silly pacote version manifest for @babel/template@7.4.4 fetched in 41ms
+55 http fetch GET 200 https://registry.npmjs.org/@babel%2ftraverse 35ms
+56 silly pacote version manifest for @babel/traverse@7.4.5 fetched in 40ms
+57 silly pacote version manifest for debug@4.1.1 fetched in 1ms
+58 http fetch GET 200 https://registry.npmjs.org/@babel%2ftypes 34ms
+59 silly pacote version manifest for @babel/types@7.4.4 fetched in 39ms
+60 http fetch GET 200 https://registry.npmjs.org/@cnakazawa%2fwatch 186ms
+61 silly pacote version manifest for @cnakazawa/watch@1.0.3 fetched in 190ms
+62 http fetch GET 200 https://registry.npmjs.org/@jest%2fconsole 176ms
+63 silly pacote version manifest for @jest/console@24.7.1 fetched in 180ms
+64 http fetch GET 200 https://registry.npmjs.org/@jest%2fcore 206ms
+65 silly pacote version manifest for @jest/core@24.8.0 fetched in 211ms
+66 http fetch GET 200 https://registry.npmjs.org/strip-ansi 35ms
+67 silly pacote version manifest for strip-ansi@5.2.0 fetched in 39ms
+68 http fetch GET 200 https://registry.npmjs.org/@jest%2fenvironment 187ms
+69 silly pacote version manifest for @jest/environment@24.8.0 fetched in 191ms
+70 http fetch GET 200 https://registry.npmjs.org/@jest%2ffake-timers 147ms
+71 silly pacote version manifest for @jest/fake-timers@24.8.0 fetched in 151ms
+72 http fetch GET 200 https://registry.npmjs.org/@jest%2freporters 182ms
+73 silly pacote version manifest for @jest/reporters@24.8.0 fetched in 186ms
+74 http fetch GET 200 https://registry.npmjs.org/@jest%2fsource-map 197ms
+75 silly pacote version manifest for @jest/source-map@24.3.0 fetched in 202ms
+76 http fetch GET 200 https://registry.npmjs.org/@jest%2ftest-result 206ms
+77 silly pacote version manifest for @jest/test-result@24.8.0 fetched in 210ms
+78 http fetch GET 200 https://registry.npmjs.org/@jest%2ftest-sequencer 195ms
+79 silly pacote version manifest for @jest/test-sequencer@24.8.0 fetched in 199ms
+80 http fetch GET 200 https://registry.npmjs.org/@jest%2ftransform 153ms
+81 silly pacote version manifest for @jest/transform@24.8.0 fetched in 158ms
+82 timing stage:rollbackFailedOptional Completed in 1ms
+83 timing stage:runTopLevelLifecycles Completed in 9775ms
+84 silly saveTree @magento/pwa-studio@3.0.0
+85 verbose stack TypeError: Cannot read property 'match' of undefined
+85 verbose stack     at tarballToVersion (/usr/local/lib/node_modules/npm/lib/install/inflate-shrinkwrap.js:87:20)
+85 verbose stack     at inflatableChild (/usr/local/lib/node_modules/npm/lib/install/inflate-shrinkwrap.js:99:22)
+85 verbose stack     at /usr/local/lib/node_modules/npm/lib/install/inflate-shrinkwrap.js:55:12
+85 verbose stack     at tryCatcher (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/util.js:16:23)
+85 verbose stack     at Object.gotValue (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/reduce.js:155:18)
+85 verbose stack     at Object.gotAccum (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/reduce.js:144:25)
+85 verbose stack     at Object.tryCatcher (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/util.js:16:23)
+85 verbose stack     at Promise._settlePromiseFromHandler (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/promise.js:517:31)
+85 verbose stack     at Promise._settlePromise (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/promise.js:574:18)
+85 verbose stack     at Promise._settlePromiseCtx (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/promise.js:611:10)
+85 verbose stack     at _drainQueueStep (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/async.js:142:12)
+85 verbose stack     at _drainQueue (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/async.js:131:9)
+85 verbose stack     at Async._drainQueues (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/async.js:147:5)
+85 verbose stack     at Immediate.Async.drainQueues [as _onImmediate] (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/async.js:17:14)
+85 verbose stack     at processImmediate (internal/timers.js:439:21)
+86 verbose cwd /var/www/pwa-studio
+87 verbose Linux 3.10.0-862.9.1.el7.x86_64
+88 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+89 verbose node v12.7.0
+90 verbose npm  v6.10.0
+91 error Cannot read property 'match' of undefined
+92 verbose exit [ 1, true ]

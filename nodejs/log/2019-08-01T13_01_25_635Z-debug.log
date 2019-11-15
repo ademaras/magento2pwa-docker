@@ -1,0 +1,48 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'build',
+1 verbose cli   '&&',
+1 verbose cli   'NODE_ENV=production',
+1 verbose cli   'PORT=8000',
+1 verbose cli   'npm',
+1 verbose cli   'run',
+1 verbose cli   'stage:venia'
+1 verbose cli ]
+2 info using npm@6.10.0
+3 info using node@v12.7.0
+4 verbose run-script [ 'prebuild', 'build', 'postbuild' ]
+5 info lifecycle @magento/pwa-studio@3.0.0~prebuild: @magento/pwa-studio@3.0.0
+6 info lifecycle @magento/pwa-studio@3.0.0~build: @magento/pwa-studio@3.0.0
+7 verbose lifecycle @magento/pwa-studio@3.0.0~build: unsafe-perm in lifecycle true
+8 verbose lifecycle @magento/pwa-studio@3.0.0~build: PATH: /usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/var/www/magento2pwa2/pwa-studio/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+9 verbose lifecycle @magento/pwa-studio@3.0.0~build: CWD: /var/www/magento2pwa2/pwa-studio
+10 silly lifecycle @magento/pwa-studio@3.0.0~build: Args: [
+10 silly lifecycle   '-c',
+10 silly lifecycle   'yarn workspaces run build "&&" "NODE_ENV=production" "PORT=8000" "npm" "run" "stage:venia"'
+10 silly lifecycle ]
+11 silly lifecycle @magento/pwa-studio@3.0.0~build: Returned: code: 1  signal: null
+12 info lifecycle @magento/pwa-studio@3.0.0~build: Failed to exec build script
+13 verbose stack Error: @magento/pwa-studio@3.0.0 build: `yarn workspaces run build "&&" "NODE_ENV=production" "PORT=8000" "npm" "run" "stage:venia"`
+13 verbose stack Exit status 1
+13 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/index.js:301:16)
+13 verbose stack     at EventEmitter.emit (events.js:203:13)
+13 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/lib/spawn.js:55:14)
+13 verbose stack     at ChildProcess.emit (events.js:203:13)
+13 verbose stack     at maybeClose (internal/child_process.js:1021:16)
+13 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:283:5)
+14 verbose pkgid @magento/pwa-studio@3.0.0
+15 verbose cwd /var/www/magento2pwa2/pwa-studio
+16 verbose Linux 3.10.0-862.9.1.el7.x86_64
+17 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "build" "&&" "NODE_ENV=production" "PORT=8000" "npm" "run" "stage:venia"
+18 verbose node v12.7.0
+19 verbose npm  v6.10.0
+20 error code ELIFECYCLE
+21 error errno 1
+22 error @magento/pwa-studio@3.0.0 build: `yarn workspaces run build "&&" "NODE_ENV=production" "PORT=8000" "npm" "run" "stage:venia"`
+22 error Exit status 1
+23 error Failed at the @magento/pwa-studio@3.0.0 build script.
+23 error This is probably not a problem with npm. There is likely additional logging output above.
+24 verbose exit [ 1, true ]

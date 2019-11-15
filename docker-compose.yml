@@ -11,6 +11,7 @@ services:
             - ./nginx/log:/var/log/nginx
         links:
             - php
+            - node
     php:
         container_name: php-server
         build: ./php/
@@ -55,3 +56,20 @@ services:
         volumes:
             - ./redis-session/data:/data
             # - ./redis-session/redis.conf:/usr/local/etc/redis/redis.conf
+    node:
+        container_name: nodejs-server
+        #image: "node"
+        build: ./nodejs/
+        #user: "node"        
+        ports:
+            - "8000:8000"
+        stdin_open: true
+        tty: true
+        volumes:
+            - ./../pwa-studio:/var/www/pwa-studio
+            - ./nodejs/log:/root/.npm/_logs
+        working_dir: /var/www/pwa-studio
+        environment:
+            - NODE_ENV=production
+        command: bash -c "npm run build && NODE_ENV=production PORT=8000 npm run stage:venia"
+
